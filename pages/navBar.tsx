@@ -71,7 +71,7 @@ export default function NavBar() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 text-2xl font-bold uppercase tracking-widest  text-white"
         >
-          <span>Løpesjappa 👟</span>
+          <span>Løpesjappa 👟🔥</span>
         </Typography>
 
         <div className="hidden lg:block">{navList}</div>
