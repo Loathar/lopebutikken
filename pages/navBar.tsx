@@ -6,9 +6,14 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { useDispatch, useSelector } from "react-redux";
+import { speak } from "../redux/counter";
+import { logCart } from "../redux/checkout";
 
 export default function NavBar() {
   const [openNav, setOpenNav] = useState(false);
+  const dispatch = useDispatch();
+  const { checkout } = useSelector((state) => state.checkout);
 
   useEffect(() => {
     window.addEventListener(
@@ -16,6 +21,8 @@ export default function NavBar() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
+
+  console.log(checkout);
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
@@ -75,7 +82,12 @@ export default function NavBar() {
         </Typography>
 
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="sm" className="hidden lg:inline-block">
+        <Button
+          variant="gradient"
+          size="sm"
+          className="hidden lg:inline-block"
+          onClick={() => dispatch(logCart())}
+        >
           <span>Buy Now</span>
         </Button>
         <IconButton

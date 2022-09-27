@@ -22,10 +22,15 @@ export const counterSlice = createSlice({
     incrementByAmount: (state, action) => {
       state.count += action.payload;
     },
+    speak: (state) => {
+      console.log("Hi mom!");
+      state.count += 1;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { increment, decrement, incrementByAmount, speak } =
+  counterSlice.actions;
 
 export default counterSlice.reducer;

@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement, incrementByAmount } from "../redux/counter";
+import {
+  increment,
+  decrement,
+  incrementByAmount,
+  speak,
+} from "../redux/counter";
 
 import Shoes from "./shoes";
 import NavBar from "./navBar";
@@ -39,6 +44,12 @@ const Home = () => {
             onClick={() => dispatch(incrementByAmount(33))}
           >
             Increment by 33
+          </button>
+          <button
+            className="m-2 p-2 bg-gray-400"
+            onClick={() => dispatch(speak())}
+          >
+            Speak to console
           </button>
         </div>
       </main>
