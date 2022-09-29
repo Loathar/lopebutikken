@@ -7,6 +7,7 @@ import {
   incrementByAmount,
   speak,
 } from "../redux/counter";
+import hero from "../images/hero.webp";
 
 import Shoes from "./shoes";
 import NavBar from "./navBar";
@@ -23,6 +24,8 @@ const Home = () => {
       </Head>
       <NavBar />
       <main className="container mx-auto">
+        <Image src={hero} alt="Mann løper mot store fjell" layout="fill" />
+
         <Shoes />
 
         <div className="App mt-10">
