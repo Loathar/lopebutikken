@@ -7,7 +7,7 @@ const Shoes: NextPage = () => {
       <h1>Hello World</h1>
 
       <Progress value={50} />
-      <Button className="!bg-red-500 text-green-100">Button</Button>
+      <Button className="!bg-amber-500 text-black">Button</Button>
     </>
   );
 };

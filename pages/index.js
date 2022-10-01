@@ -7,7 +7,7 @@ import {
   incrementByAmount,
   speak,
 } from "../redux/counter";
-import hero from "../images/hero.webp";
+import nikeHero from "../images/nikeHero.webp";
 
 import Shoes from "./shoes";
 import NavBar from "./navBar";
@@ -23,8 +23,10 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <main className="container mx-auto">
-        <Image src={hero} alt="Mann løper mot store fjell" layout="fill" />
+      <main className="container mx-auto text-center">
+        <div className="min-h-full min-w-full -z-10 overflow-hidden fixed left-0 opacity-80">
+          <Image src={nikeHero} alt="Black Nike shoes" layout="fill" />
+        </div>
 
         <Shoes />
 
