@@ -4,10 +4,12 @@ import { Button } from "@material-tailwind/react";
 const Shoes: NextPage = () => {
   return (
     <>
-      <h1>Hello World</h1>
+      <section className="relative ">
+        <h1>Hello World</h1>
 
-      <Progress value={50} />
-      <Button className="!bg-amber-500 text-black">Button</Button>
+        <Progress value={50} />
+        <Button className="!bg-amber-500 text-black">Button</Button>
+      </section>
     </>
   );
 };
