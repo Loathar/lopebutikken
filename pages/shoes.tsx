@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 const Shoes: NextPage = () => {
   return (
     <>
-      <section className="relative ">
+      <section className="relative mt-48">
         <h1>Hello World</h1>
 
         <Progress value={50} />

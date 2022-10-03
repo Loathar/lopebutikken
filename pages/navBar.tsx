@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import {
   Navbar,
   MobileNav,
@@ -40,46 +41,28 @@ export default function NavBar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal text-blue-gray-50"
+        className="p-1 font-normal text-blue-gray-50 text-xl"
       >
         <a href="#" className="flex items-center">
-          Sko
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-blue-gray-50"
-      >
-        <a href="#" className="flex items-center">
-          Klær
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-blue-gray-50"
-      >
-        <a href="#" className="flex items-center">
-          Tilbehør
+          Utstyr
         </a>
       </Typography>
     </ul>
   );
 
   return (
-    <Navbar className="mx-auto min-w-full py-2 px-4 lg:px-8 lg:py-4 text-gray-50 bg-gray-900 rounded-none border-none fixed">
+    <Navbar className="mx-auto min-w-full py-2 px-4 lg:px-8 lg:py-4 text-gray-50 bg-black rounded-none border-none sticky">
       <div className="container mx-auto flex items-center justify-between ">
-        <Typography
-          as="a"
-          href="#"
-          variant="small"
-          className="mr-4 cursor-pointer py-1.5 text-2xl font-bold uppercase tracking-widest  text-white"
-        >
-          <span>Løpesjappa 👟🔥</span>
-        </Typography>
+        <Link href={"/hero"}>
+          <Typography
+            as="a"
+            href="#"
+            variant="small"
+            className="mr-4 cursor-pointer py-1.5 text-2xl font-bold uppercase tracking-widest  text-white"
+          >
+            <span>Løpesjappa 👟🔥</span>
+          </Typography>
+        </Link>
 
         <div className="hidden lg:block">{navList}</div>
         <p className="m-2">{cart}</p>
