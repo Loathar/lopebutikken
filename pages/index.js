@@ -7,7 +7,7 @@ import {
   incrementByAmount,
   speak,
 } from "../redux/counter";
-import useSWR from "swr";
+import { data } from "./data/data";
 
 import Shoes from "./shoes";
 import Hero from "./hero";
@@ -15,11 +15,9 @@ import News from "./news";
 const Home = () => {
   const { count } = useSelector((state) => state.counter);
   const dispatch = useDispatch();
-
-  const fetcher = (...args) => fetch(...args).then((res) => res.json());
-
-  const { data, error } = useSWR("api/items.json", fetcher);
-  console.log("logg data: ", data);
+  let shoes = [];
+  data.forEach((e) => shoes.push(e.shoes));
+  console.log(shoes);
 
   return (
     <div className="container mx-auto min-w-full">
