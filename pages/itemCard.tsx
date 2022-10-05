@@ -6,15 +6,18 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
+import Image from "next/image";
+
 const ItemCard = function () {
   return (
     <Card className="w-96 p-4 m-4 rounded-none shadow-sm">
       <CardHeader color="blue" className="relative h-56 rounded-none shadow-sm">
-        <img
-          src="/img/blog.jpg"
+        {/* <Image
+          src="/../images/clothes/blåskjorte.webp"
+          layout="fill"
           alt="img-blur-shadow"
           className="h-full w-full"
-        />
+        /> */}
       </CardHeader>
       <CardBody className="text-center">
         <Typography variant="h5" className="mb-2">
