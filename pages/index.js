@@ -7,6 +7,7 @@ import {
   incrementByAmount,
   speak,
 } from "../redux/counter";
+import Image from "next/image";
 import { data } from "./data/data";
 
 import Shoes from "./shoes";
@@ -28,11 +29,15 @@ const Home = () => {
 
   let clothes = [];
   data[1].clothes.forEach((e) => clothes.push(e));
-  // console.log("Hei fra shoes array: ", shoes);
+  console.log("Hei fra shoes array: ", shoes);
   // console.log("Hei fra clothes array: ", clothes);
 
+  //Logging product names
   console.log(clothes.forEach((e) => console.log(e.product)));
 
+  const shoe = function (arr) {
+    arr.forEach((e) => <li key={e.id}>{e.product}</li>);
+  };
   return (
     <div className="container mx-auto min-w-full">
       <Head>
@@ -69,6 +74,22 @@ const Home = () => {
             Speak to console
           </button>
         </div>
+
+        <ul>
+          {shoes.map((e) => {
+            return (
+              <li key={e.id}>
+                <div>{e.product}</div>
+                <Image
+                  src={e.img}
+                  alt="Image for Nike running shoes"
+                  layout="fill"
+                />
+              </li>
+            );
+          })}
+          <p>Hei fra UL</p>
+        </ul>
       </main>
 
       <footer></footer>
