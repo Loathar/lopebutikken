@@ -74,5 +74,5 @@ export const data = [
       },
     ],
   },
-  { accessories: [{}] },
+  { accessories: [{ hei: "hei" }] },
 ];

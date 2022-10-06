@@ -15,9 +15,23 @@ import News from "./news";
 const Home = () => {
   const { count } = useSelector((state) => state.counter);
   const dispatch = useDispatch();
+
+  //console.log("Hei loggen: ", data);
+
+  // Logic for handeling data from mock database.
+  //
   let shoes = [];
-  data.forEach((e) => shoes.push(e.shoes));
-  console.log(shoes);
+  data[0].shoes.forEach((e) => {
+    //console.log(e);
+    shoes.push(e);
+  });
+
+  let clothes = [];
+  data[1].clothes.forEach((e) => clothes.push(e));
+  // console.log("Hei fra shoes array: ", shoes);
+  // console.log("Hei fra clothes array: ", clothes);
+
+  console.log(clothes.forEach((e) => console.log(e.product)));
 
   return (
     <div className="container mx-auto min-w-full">
