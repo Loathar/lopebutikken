@@ -6,6 +6,7 @@ import {
   decrement,
   incrementByAmount,
   speak,
+  lol,
 } from "../redux/counter";
 import Image from "next/image";
 import { data } from "./data/data";
@@ -27,6 +28,7 @@ const Home = () => {
     shoes.push(e);
   });
 
+  console.log("log fra object", Object.entries(data));
   let clothes = [];
   data[1].clothes.forEach((e) => clothes.push(e));
   console.log("Hei fra shoes array: ", shoes);
@@ -69,7 +71,7 @@ const Home = () => {
           </button>
           <button
             className="m-2 p-2 bg-gray-400"
-            onClick={() => dispatch(speak())}
+            onClick={() => dispatch(lol())}
           >
             Speak to console
           </button>
@@ -80,11 +82,7 @@ const Home = () => {
             return (
               <li key={e.id}>
                 <div>{e.product}</div>
-                <Image
-                  src={e.img}
-                  alt="Image for Nike running shoes"
-                  layout="fill"
-                />
+                <img src={e.img} alt="Image for Nike running shoes" />
               </li>
             );
           })}
