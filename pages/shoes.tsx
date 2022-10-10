@@ -1,6 +1,8 @@
 import { NextPage } from "next";
+import Image from "next/image";
 import { Progress } from "@material-tailwind/react";
 import { Button } from "@material-tailwind/react";
+import grønn from "../images/shoes";
 const Shoes: NextPage = () => {
   return (
     <>
