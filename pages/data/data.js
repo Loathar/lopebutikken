@@ -4,7 +4,7 @@ export const data = [
       {
         id: 1,
         product: "Nike Zoom X",
-        img: "/public/shoes/turkis.webp",
+        img: "grønn",
         price: 1100,
       },
       {
