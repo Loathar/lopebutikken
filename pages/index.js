@@ -14,6 +14,8 @@ import { data } from "./data/data";
 import Shoes from "./shoes";
 import Hero from "./hero";
 import News from "./news";
+import grønn from "../images/shoes/grønn.webp";
+
 const Home = () => {
   const { count } = useSelector((state) => state.counter);
   const dispatch = useDispatch();
@@ -82,7 +84,14 @@ const Home = () => {
             return (
               <li key={e.id}>
                 <div>{e.product}</div>
-                <img src={e.img} alt="Image for Nike running shoes" />
+                <div>{e.id}</div>
+                <Image
+                  src={grønn}
+                  height={"350px"}
+                  width={"350px"}
+                  alt="grenn nike running shoes"
+                  priority="lazy"
+                />
               </li>
             );
           })}
