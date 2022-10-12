@@ -86,7 +86,9 @@ const Home = () => {
                 <div>{e.product}</div>
                 <div>{e.id}</div>
                 <Image
-                  src={grønn}
+                  src={
+                
+                  }
                   height={"350px"}
                   width={"350px"}
                   alt="grenn nike running shoes"
