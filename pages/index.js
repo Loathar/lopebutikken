@@ -15,6 +15,10 @@ import Shoes from "./shoes";
 import Hero from "./hero";
 import News from "./news";
 import grønn from "../images/shoes/grønn.webp";
+import rød from "../images/shoes/rød.jpeg";
+
+const shoeArray = [grønn, rød];
+console.log(shoeArray);
 
 const Home = () => {
   const { count } = useSelector((state) => state.counter);
@@ -86,14 +90,13 @@ const Home = () => {
                 <div>{e.product}</div>
                 <div>{e.id}</div>
                 <Image
-                  src={
-                
-                  }
+                  src={shoeArray[0]}
                   height={"350px"}
                   width={"350px"}
                   alt="grenn nike running shoes"
                   priority="lazy"
                 />
+                <div>Price: {e.price}</div>
               </li>
             );
           })}
