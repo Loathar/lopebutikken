@@ -18,10 +18,14 @@ import grønn from "../images/shoes/grønn.webp";
 import rød from "../images/shoes/rød.jpeg";
 
 const shoeArray = [grønn, rød];
-console.log(shoeArray);
+//console.log(shoeArray);
 
 const Home = () => {
-  const { count } = useSelector((state: any) => state.counter);
+  const { count } = useSelector((state) => {
+    console.log(state);
+
+    return state.counter;
+  });
   const dispatch = useDispatch();
 
   //console.log("Hei loggen: ", data);
@@ -30,18 +34,18 @@ const Home = () => {
   //
   let shoes: [] = [];
   data[0].shoes.forEach((e) => {
-    console.log(e);
+    //console.log(e);
     shoes.push(e);
   });
 
   console.log("log fra object", Object.entries(data));
   let clothes = [];
   data[1].clothes.forEach((e) => clothes.push(e));
-  console.log("Hei fra shoes array: ", shoes);
+  //console.log("Hei fra shoes array: ", shoes);
   // console.log("Hei fra clothes array: ", clothes);
 
   //Logging product names
-  console.log(clothes.forEach((e) => console.log(e.product)));
+  //console.log(clothes.forEach((e) => console.log(e.product)));
 
   const shoe = function (arr) {
     arr.forEach((e) => <li key={e.id}>{e.product}</li>);
