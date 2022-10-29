@@ -20,19 +20,15 @@ import rød from "../images/shoes/rød.jpeg";
 const shoeArray = [grønn, rød];
 //console.log(shoeArray);
 
+const shoes = [data[0]];
+console.log(shoes);
+
 interface Product {
   id: number;
   name: string;
   imgUrl: string;
   price: number;
 }
-
-console.log(
-  data.forEach((el) => {
-    // console.log("This is a element from array", el);
-    el.find((name) => name === "shoes");
-  })
-);
 
 // const mapFunction = function(arr:[]){
 //   arr.map((product,i)=> <li key={product.id}>{product.name}</li>)
@@ -51,7 +47,7 @@ const Home = () => {
 
   // Logic for handeling data from mock database.
   //
-  let shoes: [] = [];
+  // let shoes: [] = [];
   data[0].shoes.forEach((e) => {
     //console.log(e);
     shoes.push(e);
