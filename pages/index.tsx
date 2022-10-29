@@ -20,6 +20,25 @@ import rød from "../images/shoes/rød.jpeg";
 const shoeArray = [grønn, rød];
 //console.log(shoeArray);
 
+interface Product {
+  id: number;
+  name: string;
+  imgUrl: string;
+  price: number;
+}
+
+console.log(
+  data.forEach((el) => {
+    // console.log("This is a element from array", el);
+    el.find((name) => name === "shoes");
+  })
+);
+
+// const mapFunction = function(arr:[]){
+//   arr.map((product,i)=> <li key={product.id}>{product.name}</li>)
+//   console.log({product.name});
+//   }
+
 const Home = () => {
   const { count } = useSelector((state) => {
     console.log(state);

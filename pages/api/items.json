@@ -3,26 +3,26 @@
     "shoes": [
       {
         "id": 1,
-        "product": "Nike Zoom X",
-        "img": "/public/shoes/turkis.webp",
+        "name": "Nike Zoom X",
+        "imgUrl": "/public/shoes/turkis.webp",
         "price": 1100
       },
       {
         "id": 2,
-        "product": "Nike Zoom X",
-        "img": "/images/shoes/grønn.webp",
+        "name": "Nike Zoom X",
+        "imgUrl": "/images/shoes/grønn.webp",
         "price": 1100
       },
       {
         "id": 3,
-        "product": "Nike Zoom X",
-        "img": "/images/shoes/rød.jpeg",
+        "name": "Nike Zoom X",
+        "imgUrl": "/images/shoes/rød.jpeg",
         "price": 1100
       },
       {
         "id": 4,
-        "product": "Nike Zoom X",
-        "img": "/images/shoes/svart.webp",
+        "name": "Nike Zoom X",
+        "imgUrl": "/images/shoes/svart.webp",
         "price": 1100
       }
     ]
@@ -32,14 +32,14 @@
     "clothes": [
       {
         "id": 5,
-        "product": "Nike T-skjorte",
-        "img": "/images/clothes/blåtskjorte.webp",
+        "name": "Nike T-skjorte",
+        "imgUrl": "/images/clothes/blåtskjorte.webp",
         "price": 899
       },
       {
         "id": 6,
-        "product": "Nike Løpejakke",
-        "img": "/images/clothes/løpejakkeBlå.webp",
+        "name": "Nike Løpejakke",
+        "imgUrl": "/images/clothes/løpejakkeBlå.webp",
         "img2": "/images/clothes/svartjakke.webp",
         "img3": "/images/clothes/orangejakke.webp",
         "price": 2500
@@ -47,14 +47,14 @@
 
       {
         "id": 8,
-        "product": "Nike Tights",
-        "img": "/images/clothes/grønntights.webp",
+        "name": "Nike Tights",
+        "imgUrl": "/images/clothes/grønntights.webp",
         "price": 600
       },
       {
         "id": 9,
-        "product": "Nike treningssett",
-        "img": "/images/clothes/lyseblåttsett.webp",
+        "name": "Nike treningssett",
+        "imgUrl": "/images/clothes/lyseblåttsett.webp",
         "img2": "/images/clothes/rosatskjorte.webp",
         "img3": "/images/clothes/rosasett.webp",
         "price": 900
@@ -62,14 +62,14 @@
 
       {
         "id": 11,
-        "product": "Nike T-skjorte",
-        "img": "/images/clothes/svarttskjorte.webp",
+        "name": "Nike T-skjorte",
+        "imgUrl": "/images/clothes/svarttskjorte.webp",
         "price": 600
       },
       {
         "id": 12,
-        "product": "Nike Sokker",
-        "img": "/images/clothes/sokker.webp",
+        "name": "Nike Sokker",
+        "imgUrl": "/images/clothes/sokker.webp",
         "price": 300
       }
     ]
